@@ -46,11 +46,12 @@ for (let i=0; i<cookie_Sale_Per_Store.length;i++) {
         newBody.appendChild(newlocation);
         newlocation.innerText = cookie_Sale_Per_Store[i].location;
 
-        
-        let newList = document.getElementById('ListOfProperties');
+       
+
+        /*let newList = document.getElementById('ListOfProperties');
+        console.log(newList);
         let newAverage = document.createElement('li');
         newList.appendChild(newAverage);
-        newAverage.innerText = cookie_Sale_Per_Store[i].Average_Cookies_Per_Customer;
-        
-    
+
+        newAverage.innerText = cookie_Sale_Per_Store[i].Average_Cookies_Per_Customer;*/
     };
