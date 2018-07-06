@@ -33,13 +33,28 @@ elBody.appendChild(elTable);
 
 //looping through the array of my object
 for (var i=0; i<storeArray.length; i++){
+
+    //creating table and attaching locations of stores as table row header
     let elRow = document.createElement('tr');
     elTable.appendChild(elRow);
     let elTh = document.createElement('th');
     elRow.appendChild(elTh);
     elTh.innerText =storeArray[i].location;
     
+    //creating and appending a cell of the table (td) to element (tr) and dynamically populating this cell with one property from my objects stored in an array
+
+    let elTd =document.createElement('td');
+    elRow.appendChild(elTd);
+    elTd.innerText = storeArray[i].Average_Cookies_Per_Customer;
+
+    //creating and appending a cell of the table (td) to element (tr) and dynamically populating this cell with one property from my objects stored in an array
+
+    let elTd2 =document.createElement('td');
+    elRow.appendChild(elTd2);
+    elTd2.innerText = storeArray[i].Avg_Number_Of_Customers;
+
 }
+
 
 
 
