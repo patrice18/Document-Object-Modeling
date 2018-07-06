@@ -5,7 +5,7 @@ let Store = function (location, Average_Cookies_Per_Customer,Avg_Number_Of_Custo
     this.Average_Cookies_Per_Customer = Average_Cookies_Per_Customer;
     this.Avg_Number_Of_Customers = Avg_Number_Of_Customers;
     this.Average_Cookies_Sold_Per_Hour = function () {
-        return   this.Average_Cookies_Per_Customer * this.Avg_Number_Of_Customers;
+        return  this.Average_Cookies_Per_Customer * this.Avg_Number_Of_Customers;
     };
 }
 
@@ -25,7 +25,24 @@ storeArray.push(store3);
 console.log(storeArray);
 
 //creating body element in sale.html and giving it an id, and an attribute
-let elBody = doucument.createele
+let elBody = document.getElementById ('creatingTable');
+let elTable = document.createElement('table');
+
+//attaching the firstChild of element'table' to table. That first child is table
+elBody.appendChild(elTable);
+
+//looping through the array of my object
+for (var i=0; i<storeArray.length; i++){
+    let elRow = document.createElement('tr');
+    elTable.appendChild(elRow);
+    let elTh = document.createElement('th');
+    elRow.appendChild(elTh);
+    elTh.innerText =storeArray[i].location;
+    
+}
+
+
+
 
 
 /*
