@@ -17,7 +17,16 @@ let store1 = new Store( 'Bethesda', 2, 12);
 let store2 = new Store('Rockville', 3, 22);
 let store3 = new Store('Washington D.c', 4,8) 
 
-console.log();
+storeArray.push(store1);
+storeArray.push(store2);
+storeArray.push(store3);
+
+//using console.log to check myArray
+console.log(storeArray);
+
+//creating body element in sale.html and giving it an id, and an attribute
+let elBody = doucument.createele
+
 
 /*
 let cookieShop1 = { 
