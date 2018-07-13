@@ -8,9 +8,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
    
 </head>
- <body>
-
+ <body id="body">
+    <!-- start of the main text which is a form -->
+    <!--creating id attributes in my form element and children nodes and assigning valuess to these attributes so that the script can work( identify/access) with these particular elements-->
     <form id = "stores"> 
+    <!-- adding the element fieldset to group the forms in -->
        <fieldset>
         <p>location:
             <select name = "location1"/>
@@ -28,10 +30,25 @@
             <textarea name ="avgOfCustomer" cols = "20" rows="5"> Give me an anverage number of customer </textarea>
             
         <button type = "submit">Submit</button>
+    <footer id = "footer">
+
+
+    </footer>
 
       </fieldset>   
     </form>
-          
+    <!-- end of the main text -->   
+    
+    <!-- beginning of the footer-->
+   <table>
+    <tfoot> 
+            <tr> 
+                <th></th>
+                <th scope = "col"> <b>Total</b></th>
+            </tr>
+    
+        </tfoot>
+    </table>
 </body>
 <script src="form-event.js"></script>
 </html>
