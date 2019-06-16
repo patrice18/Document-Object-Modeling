@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms and Events J.S</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+   
+</head>
+ <body id="body">
+    <!-- start of the main text which is a form -->
+    <!--creating id attributes in my form element and children nodes and assigning valuess to these attributes so that the script can work( identify/access) with these particular elements-->
+    <form id = "stores"> 
+    <!-- adding the element fieldset to group the forms in -->
+       <fieldset>
+        <p>location:
+            <select name = "location1"/>
+              <option value = "Bethesda">Bethesda</option>
+              <option value = "Rockville">Rockville</option>
+              <option value = "Washington D.C">Washington D.C</option>
+        </p> </br>
+        
+        <p> Average Cookies per Customers</p> </br>
+            <input required type = "number" name = "avg_cookies_per_cust" value = ""/>
+    
+         </br>
+
+        <p> Average Numbr of Customenrs</p>
+            <textarea name ="avgOfCustomer" cols = "20" rows="5"> Give me an anverage number of customer </textarea>
+            
+        <button type = "submit">Submit</button>
+    <footer id = "footer">
+
+
+    </footer>
+
+      </fieldset>   
+    </form>
+    <!-- end of the main text -->   
+    
+    <!-- beginning of the footer-->
+   <table>
+    <tfoot> 
+            <tr> 
+                <th></th>
+                <th scope = "col"> <b>Total</b></th>
+            </tr>
+    
+        </tfoot>
+    </table>
+</body>
+<script src="form-event.js"></script>
+</html>
